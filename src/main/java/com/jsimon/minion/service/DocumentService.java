@@ -68,7 +68,7 @@ public class DocumentService {
     }
 
     private String getPreSignedUrl(String filename) {
-        return "http://localhost:8080/file/".concat(filename);
+        return "http://localhost:9090/file/".concat(filename);
     }
 
 
