@@ -7,6 +7,14 @@ spring:
   servlet:
     multipart:
       max-file-size: 20MB
+  r2dbc:
+    url: r2dbc:postgres://ipelhyhq:c8xQYRQGF5lC8RlJzeEbjk-gQP62fScU@babar.db.elephantsql.com/ipelhyhq
+    username: ipelhyhq
+    password: c8xQYRQGF5lC8RlJzeEbjk-gQP62fScU
+    pool:
+      enabled: true
+      initial-size: 1
+      max-size: 1
 
 minio:
   url: http://127.0.0.1:9000

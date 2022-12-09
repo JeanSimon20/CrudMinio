@@ -18,15 +18,21 @@ import java.io.Serializable;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Document implements Serializable {
 
-    private static final long serialVersionUID = 232836038145089522L;
+
+
+
+    private String title;
+
+    private String description;
 
     @SuppressWarnings("java:S1948")
     private MultipartFile file;
-    @SuppressWarnings("java:S1948")
+
     private String url;
 
     private Long size;
 
     private String filename;
 
+    private boolean active;
 }
